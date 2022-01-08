@@ -1,0 +1,74 @@
+nav {
+  height: 115px;
+  width: 100%;
+  background-color: #ff0066;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a {
+  color: #f1e8e8;
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.title-home {
+  font-size: 30px;
+  colo: #fff;
+}
+
+.sm-container {
+  height: 100px;
+  width: 200px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.md-container {
+  height: 200px;
+  width: 350px;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #ff0066;
+}
+
+.lg-container {
+  height: 300px;
+  width: 450px;
+  background-color: #ff0066;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.button-warning, .button-error, .button-save {
+  height: 50px;
+  width: 100px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.button-save {
+  background-color: green;
+}
+
+.button-error {
+  background-color: red;
+}
+
+.button-warning {
+  background-color: yellow;
+}
+
+body {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,55 @@
+@mixin container ($height, $width, $bg-color){
+    height: $height;
+    width: $width;
+    background-color: $bg-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin titles ($font-size, $color) {
+    font-size: $font-size;
+    colo: $color;
+}
+
+.title-home{
+    @include titles (30px, #fff);
+}
+
+.sm-container{
+    @include container(100px, 200px, blue);
+    border-radius: $sm;
+}
+
+.md-container{
+    @include container(200px, 350px , green);
+    border: 5px solid $primary-color;
+}
+
+.lg-container{
+    @include container(300px, 450px , $primary-color);
+    font-size:$md;
+}
+
+
+%button-p{
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.button-save{
+    @extend %button-p;
+    background-color: green;
+}
+
+.button-error{
+    @extend %button-p;
+    background-color: red;
+}
+
+.button-warning{
+    @extend %button-p;
+    background-color: yellow;
+}

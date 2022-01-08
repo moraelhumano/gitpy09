@@ -1,0 +1,16 @@
+
+nav{
+    height: 115px;
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+    a{
+        color: $primary-text;
+        font-size: $md;
+        text-decoration: none;
+        margin-left: $sm;
+    }
+}
