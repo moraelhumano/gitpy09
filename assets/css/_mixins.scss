@@ -1,3 +1,12 @@
+@mixin titles ($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+}
+
+.title-home{
+    @include titles (30px, #fff);
+}
+
 @mixin container ($height, $width, $bg-color){
     height: $height;
     width: $width;
@@ -6,16 +15,6 @@
     justify-content: center;
     align-items: center;
 }
-
-@mixin titles ($font-size, $color) {
-    font-size: $font-size;
-    colo: $color;
-}
-
-.title-home{
-    @include titles (30px, #fff);
-}
-
 .sm-container{
     @include container(100px, 200px, blue);
     border-radius: $sm;
@@ -31,14 +30,12 @@
     font-size:$md;
 }
 
-
 %button-p{
     height: 50px;
     width: 100px;
     text-align: center;
     border-radius: 5px;
 }
-
 .button-save{
     @extend %button-p;
     background-color: green;
